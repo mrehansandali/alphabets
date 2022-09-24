@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid lightblue;
+    border-radius: 30px;
+    margin: 4% 10%;
+    /* width: 50%; */
+}
+.row{
+    display: flex;
+    justify-content: center; 
+}
+
+.box{
+    padding: 3% 7%;
+    margin: 1%;
+    border: 3px solid black;
+    background-color: lightgrey;
+    border-radius: 30px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.box:hover {
+    background-color: grey;
+}
+
+@media  (max-width:580px) {
+    .row{
+        display: block;
+    }
+    .box{
+        margin: 20px 50px;
+        text-align: center;
+        padding: 20px;
+
+    }
+}
